@@ -1,0 +1,28 @@
+{
+  "name": "node_project",
+  "version": "1.0.0",
+  "description": "\"my social media web application\"",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "keywords": [
+    "social"
+  ],
+  "author": "prasad_konatam",
+  "license": "ISC",
+  "dependencies": {
+    "connect-mongo": "^5.1.0",
+    "cookie-parser": "^1.4.6",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "express-session": "^1.18.0",
+    "git": "^0.1.5",
+    "layout": "^2.2.0",
+    "layouts": "^3.0.2",
+    "mongoose": "^8.3.3",
+    "nodemon": "^3.1.0",
+    "passport": "^0.7.0",
+    "passport-local": "^1.0.0"
+  }
+}

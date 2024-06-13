@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= title %></title>
+  </head>
+  <body>
+    <h1 style="text-align: center">User Profile</h1>
+    <p style="text-align: center">User: <%= user.name %></p>
+    <p style="text-align: center">Email: <%= user.email %></p>
+    <form action="/user/sign-out" method="GET" style="text-align: center">
+      <button
+        type="submit"
+        style="
+          padding: 10px;
+          background-color: #27c436;
+          color: white;
+          border: none;
+          cursor: pointer;
+        "
+      >
+        Sign Out
+      </button>
+    </form>
+  </body>
+</html>

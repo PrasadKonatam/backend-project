@@ -1,0 +1,62 @@
+<body>
+  <header
+    style="
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      display: flex;
+      justify-content: end;
+    "
+  >
+    <% if (!isAuthenticated) { %>
+    <form action="/user/sign-up" method="get">
+      <button
+        type="submit"
+        style="
+          background-color: #008cba;
+          color: white;
+          padding: 10px 20px;
+          border: none;
+          cursor: pointer;
+        "
+        onmouseover="this.style.backgroundColor='#008cba';"
+        onmouseout="this.style.backgroundColor='#007cba';"
+      >
+        Sign Up
+      </button>
+    </form>
+
+    <form action="/user/sign-in" method="get">
+      <button
+        type="submit"
+        style="
+          background-color: #4caf50;
+          color: white;
+          padding: 10px 20px;
+          border: none;
+          cursor: pointer;
+        "
+        onmouseover="this.style.backgroundColor='#45a050';"
+        onmouseout="this.style.backgroundColor='#45a040';"
+      >
+        Sign In
+      </button>
+    </form>
+    <% } else { %>
+    <form action="/user/sign-out" method="get" style="text-align: center">
+      <button
+        type="submit"
+        style="
+          padding: 10px;
+          background-color: #4caf50;
+          color: white;
+          border: none;
+          cursor: pointer;
+        "
+      >
+        Sign Out
+      </button>
+    </form>
+    <% } %>
+  </header>
+</body>
